@@ -107,11 +107,14 @@ form button:hover {
 
     form {
         text-align: center;
+        background: black;
+        color: white;
     }
     
     form h2 {
         text-align: center;
-        font-size: 52px;
+        font-size: 48.5px;
+        font-weight: bolder;
     }
 
     form ul {
@@ -130,6 +133,7 @@ form button:hover {
     
     form ul li p {
         font-size: 35px;
+        font-weight: normal;
     }
     
     form ul li input {
