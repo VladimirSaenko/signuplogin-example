@@ -104,7 +104,6 @@ form button:hover {
 }
 
 @media screen and (min-width: 300px) and (max-width: 800px) {
-
     form {
         text-align: center;
         background: black;
