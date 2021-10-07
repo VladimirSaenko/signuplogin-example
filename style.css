@@ -86,8 +86,7 @@ form div input {
 
 form button {
     position: absolute;
-    right: 10%;
-    bottom: 10%;
+    bottom: 60px;
     cursor: pointer;
     color: white;
     text-align: center;
