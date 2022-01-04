@@ -7,41 +7,43 @@
     <title>Sign Up Login Example</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form>
-        <h2>Sign Up Login</h2>
-            <ul>
-                <li>
-                    <p>Name</p>
-                    <input type="text">
-                </li>
-                <li>
-                    <p>Last Name</p>
-                    <input type="text">
-                </li>
-                <li>
-                    <p>Phone</p>
-                    <input type="tel">
-                </li>
-                <li>
-                    <p>E-Mail</p>
-                    <input type="email">
-                </li>
-                <li>
-                    <p>Password</p>
-                    <input type="password">
-                </li>
-                <li>
-                    <p>Confirm Password</p>
-                    <input type="password">
-                </li>
-            </ul>
+    <div class="container">
+        <h2 class="title">Sign Up Login</h2>
+        <form>
             <div>
-                <input type="checkbox">
-                <p>I agree</p>
-                <button type="button">SIGN UP</button>
+                <h2>Name</h2>
+                <input type="text">
             </div>
-    </form>
+            <div>
+                <h2>Last Name</h2>
+                <input type="text">
+            </div>
+            <div>
+                <h2>Phone</h2>
+                <input type="number">
+            </div>
+            <div>
+                <h2>E-Mail</h2>
+                <input type="email">
+            </div>
+            <div>
+                <h2>Password</h2>
+                <input id="passInp1" type="password">
+            </div>
+            <div>
+                <h2>Confirm Password</h2>
+                <input id="passInp2" type="password">
+            </div>
+        </form>
+        <div class="agreeBox">
+            <input type="checkbox">
+            <p>I agree to Terms and Conditions</p>
+        </div>
+        <button type="button">Sign Up</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

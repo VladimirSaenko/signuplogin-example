@@ -4,167 +4,123 @@
     padding: 0;
     user-select: none;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Spline Sans', sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: #fff;
+}
+
+.title {
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    font-size: 50px;
 }
 
 form {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 150px 150px; 
+    width: 100%;
+    height: 425px;
+}
+
+form div {
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    height: 100vh;
-    width: 100%;
 }
 
-form h2 {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    text-transform: capitalize;
-    font-weight: lighter;
-    font-size: 60px;
-    color: purple;
+form div h2 {
+   font-size: 40px;
+   margin: 15px 0px;
 }
 
-form h2:hover {
-    color: black;
+form div input {
+    font-size: 34px;
+    width: 200px;
+    height: 50px;
 }
 
-form ul {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    grid-template-rows: 50px 50px;
-    grid-auto-rows: 100px;
-    grid-template-columns: 300px 300px;
-    grid-row-gap: 100px;
-    width: 100%;
-    height: 100vh;
-    list-style: none;
-}
-
-form ul li:nth-child(4) {
-    list-style: square outside;
-}
-
-form ul li p {
-    font-weight: lighter;
-    text-transform: capitalize;
-    font-size: 40px;
-    white-space: nowrap;
-}
-
-form ul li input {
-    width: 250px;
-    height: 35px;
-    font-size: 40px;
-}
-
-form div {
-    /* position: absolute; */
-    /* bottom: 0; */
+.agreeBox {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* text-align: center; */
-    white-space: nowrap;
+    margin-top: 20px;
+    height: 100px;
+    width: 100%;
+}
+
+.agreeBox input {
+    width: 35px;
+    height: 35px;
+    margin: 20px;
+}
+
+.agreeBox p {
+    font-size: 35px;
+}
+
+button, input {
+    cursor: pointer;
+}
+
+button {
+    color: #fff;
+    background: blue;
+    outline: none;
+    border: none;
+    font-size: 30px;
     width: 150px;
     height: 50px;
+    transition: 0.5s;
 }
 
-form div p {
-    font-size: 32px;
-    margin-left: 15px;
-}
-
-form div input {
-    width: 75px;
-    height: 35px;
-}
-
-form button {
-    position: absolute;
-    bottom: 60px;
-    cursor: pointer;
-    color: white;
-    text-align: center;
-    width: 175px;
-    height: 70px;
-    font-size: 35px;
-    background: rgb(63, 63, 255);
-    text-transform: uppercase;
-}
-
-form button:hover {
-    background: white;
-    color: rgb(63, 63, 255);
+button:hover, button:active {
+    background: rgb(19, 19, 131);
 }
 
 @media screen and (min-width: 300px) and (max-width: 800px) {
     form {
-        text-align: center;
-        background: black;
-        color: white;
-    }
-    
-    form h2 {
-        text-align: center;
-        font-size: 48.5px;
-        font-weight: bolder;
-    }
-
-    form ul {
-        margin-top: 350px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    form ul li {
-        margin: -15px;
-    }
-    
-    form ul li:nth-child(4) {
-        list-style: none;
-    }
-    
-    form ul li p {
-        font-size: 35px;
-        font-weight: normal;
-    }
-    
-    form ul li input {
-        width: 150px;
-        height: 35px;
-        font-size: 40px;
-    }
-    
-    form div {
         margin-top: 100px;
-        position: absolute;
-        bottom: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        white-space: nowrap;
-        width: 150px;
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 100px 150px; 
+        width: 100vw;
+        height: 315px;
+    }
+
+    form div h2 {
+        font-size: 29px;
+        margin: 0px 0px;
+    }
+
+    form div input {
+        font-size: 34px;
+        width: 120px;
         height: 50px;
     }
-    
-    form div p {
-        font-size: 32px;
-        margin-left: 15px;
+
+    .agreeBox {
+        margin-top: 50px;
     }
-    
-    form div input {
-        width: 75px;
-        height: 35px;
+
+    .agreeBox input {
+        width: 45px;
+        height: 45px;
     }
-    
-    form button {
-        margin: 0;
-        bottom: 0;
+
+    .agreeBox p {
+        font-size: 25px;
     }
 }
